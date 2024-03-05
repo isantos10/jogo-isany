@@ -1,41 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="isany.MainPage">
+             x:Class="isany.MainPage"
+             Shell.NavBarIsVisible="false">
+ <Grid>
+   <Image Source="fazendinha1.jpg"
+          Opacity=".8"
+          Aspect="AspectFill"/>
+   <Label 
+          Text="O Dia na Fazenda"
+          TextColor="#0b470b"
+          Margin="30"
+          FontSize="40"
+          FontFamily="dianafazenda1"
+          HorizontalOptions="Center"
+          HorizontalTextAlignment="Center"
+          VerticalOptions="Start"/>
+    <VerticalStackLayout
+        VerticalOptions="End"
+        Spacing="10"
+        Margin="15,0,15,40">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+      <Button 
+              Text="Iniciar"
+            
+              HeightRequest="50"
+              CornerRadius="25"
+              BackgroundColor="#d1725a"
+              TextColor="Black"
+              Margin="0,0,0,10"
+              FontSize="18"
+              FontFamily="CachetStdBold"/>  
+       
+       <Button 
+              Text="Sobre"
+              
+              
+              BorderWidth="1"
+              HeightRequest="50"
+              CornerRadius="25"
+              BackgroundColor="#d1725a"
+              TextColor="Black"
+              FontSize="18"
+              FontFamily="CachetStdBold"/> 
+      </VerticalStackLayout>  
+  
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
-
-        </VerticalStackLayout>
-    </ScrollView>
+  </Grid>        
+    
 
 </ContentPage>
