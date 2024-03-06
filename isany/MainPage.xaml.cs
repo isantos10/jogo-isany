@@ -8,7 +8,12 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 	}
-
+  
+	private void BotãoVoltarFoiClicado(object sender, EventArgs args)
+  {
+    frameAbout.IsVisible = false;
+  }
 	
+
 }
 

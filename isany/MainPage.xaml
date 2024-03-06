@@ -23,7 +23,6 @@
 
       <Button 
               Text="Iniciar"
-            
               HeightRequest="50"
               CornerRadius="25"
               BackgroundColor="#d1725a"
@@ -34,8 +33,7 @@
        
        <Button 
               Text="Sobre"
-              
-              
+              Clicked="BotãoSobreFoiClicado"
               BorderWidth="1"
               HeightRequest="50"
               CornerRadius="25"
@@ -44,9 +42,53 @@
               FontSize="18"
               FontFamily="CachetStdBold"/> 
       </VerticalStackLayout>  
-  
+       <Frame 
+           x:Name="frameSobre"
+           IsVisible="false"
+           Margin="10,20"
+           CornerRadius="20"
+           BackgroundColor="#d1725a"
+           HorizontalOptions="Fill"
+           VerticalOptions="Fill">
+     <Grid>
+       <Grid.RowDefinitions>
+          <RowDefinition Height="90"/>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="60"/>
+       </Grid.RowDefinitions>
 
-  </Grid>        
-    
-
-</ContentPage>
+     <Label 
+              Text="Sobre"
+              TextColor="White"
+              Margin="20"
+              FontSize="40"
+              FontFamily="Sobre"
+              HorizontalOptions="Center"
+              HorizontalTextAlignment="Center"
+              Grid.Row="0"/>
+     <Label 
+               Text="Aplicativo desenvolvido por Maria Isabele e Any Gabrieli, com o objetivo de conhecer e aprender a linguagem xaml. Desenvolvidos em aulas semanais da materia com a intrução do professor Thiago Macedo."
+               CharacterSpacing="1"
+               LineHeight="1.5"
+               TextColor="White"
+               HorizontalOptions="Center"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="Center"
+               FontSize="20"
+               FontFamily="CachetStdBold"
+               Grid.Row="1"/>       
+     <Button    
+                Text="voltar"
+                Clicked="BotãoVoltarFoiClicado"
+                HeightRequest="50"
+                CornerRadius="25"
+                BackgroundColor="#b2614d"
+                TextColor="White"
+                Margin="0,0,0,10"
+                FontSize="18"
+                FontFamily="CachetStdBold"
+                Grid.Row="2"/>
+    </Grid> 
+    </Frame>
+    </Grid>        
+    </ContentPage>
