@@ -23,6 +23,7 @@
 
       <Button 
               Text="Iniciar"
+              Clicked="BotãoIniciarFoiClicado"
               HeightRequest="50"
               CornerRadius="25"
               BackgroundColor="#d1725a"
@@ -77,12 +78,13 @@
                FontSize="20"
                FontFamily="CachetStdBold"
                Grid.Row="1"/>       
+
      <Button    
                 Text="voltar"
                 Clicked="BotãoVoltarFoiClicado"
                 HeightRequest="50"
                 CornerRadius="25"
-                BackgroundColor="#b2614d"
+                BackgroundColor="#924A37"
                 TextColor="White"
                 Margin="0,0,0,10"
                 FontSize="18"

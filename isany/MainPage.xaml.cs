@@ -8,12 +8,19 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 	}
-  
+	private void BotãoSobreFoiClicado(object sender, EventArgs args)
+  {
+	frameSobre.IsVisible=true;
+  }
 	private void BotãoVoltarFoiClicado(object sender, EventArgs args)
   {
-    frameAbout.IsVisible = false;
+    frameSobre.IsVisible = false;
   }
-	
+	private void BotãoIniciarFoiClicado(object sender, EventArgs args)
+  {
+    if (Application.Current != null)
+      Application.Current.MainPage = new IsaPage();
+  }
 
 }
 
