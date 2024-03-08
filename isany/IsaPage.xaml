@@ -3,4 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="isany.IsaPage"
              Shell.NavBarIsVisible="false">
-             </ContentPage>
+<Grid>
+   <Image Source="imagemfazendeiros.jpg"
+          Opacity=".8"
+          Aspect="AspectFill"/>
+   <Label 
+          Text="Bem-vindos à fazenda! Queridas crianças, Estamos radiantes em recebê-los em nossa fazenda! Preparem-se para um dia repleto de aventuras no campo, onde vocês conhecerão nossos animais, colherão frutas frescas e aprenderão sobre a vida na fazenda."
+          TextColor="#0b470b"
+          BackgroundColor="White"
+          Margin="40"
+          FontSize="20"
+          FontFamily="fazendeiros"
+          HorizontalOptions="Center"
+          HorizontalTextAlignment="Center"
+          VerticalOptions="End"/>            
+</Grid>
+</ContentPage>
+  
+    
