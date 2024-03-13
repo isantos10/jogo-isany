@@ -4,19 +4,37 @@
              x:Class="isany.IsaPage"
              Shell.NavBarIsVisible="false">
 <Grid>
+   <Grid.RowDefinitions>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="60"/>
+   </Grid.RowDefinitions>
+
    <Image Source="imagemfazendeiros.jpg"
           Opacity=".8"
-          Aspect="AspectFill"/>
+          Aspect="AspectFill"
+          Grid.RowSpan="2"/>
    <Label 
           Text="Bem-vindos à fazenda! Queridas crianças, Estamos radiantes em recebê-los em nossa fazenda! Preparem-se para um dia repleto de aventuras no campo, onde vocês conhecerão nossos animais, colherão frutas frescas e aprenderão sobre a vida na fazenda."
           TextColor="#0b470b"
           BackgroundColor="White"
-          Margin="40"
+          Margin="40, 0, 40, 10"
           FontSize="20"
           FontFamily="fazendeiros"
           HorizontalOptions="Center"
           HorizontalTextAlignment="Center"
-          VerticalOptions="End"/>            
+          VerticalOptions="End"
+          Grid.Row="0"/>
+  <Button 
+              Text="Avançar"
+              Clicked="BotaoAvancarFoiClicado"
+              HeightRequest="50"
+              CornerRadius="25"
+              BackgroundColor="#d1725a"
+              TextColor="Black"
+              Margin="0,0,0,10"
+              FontSize="18"
+              FontFamily="CachetStdBold"
+              Grid.Row="1"/>             
 </Grid>
 </ContentPage>
   

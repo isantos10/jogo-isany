@@ -18,8 +18,7 @@ public partial class MainPage : ContentPage
   }
 	private void BotãoIniciarFoiClicado(object sender, EventArgs args)
   {
-    if (Application.Current != null)
-      Application.Current.MainPage = new IsaPage();
+    Application.Current.MainPage = new IsaPage();
   }
 
 }
