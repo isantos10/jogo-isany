@@ -2,4 +2,31 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="isany.SegundaPage"
-             Shell.NavBarIsVisible="false"/>
+             Shell.NavBarIsVisible="false">
+<Grid>
+    <Image 
+          Source="criancasceleiro.png"
+          Opacity=".8"
+          Aspect="AspectFill"/>
+      <Label 
+          Text="Queríamos dizer um enorme obrigado por nos receberem em sua fazenda! ficamos curiosos, Contem mais para a gente!"
+          BackgroundColor="White"
+          Margin="40, 20, 40, 20"
+          FontSize="20"
+          FontFamily="fazendeiros"
+          HorizontalOptions="Center"
+          HorizontalTextAlignment="Center"
+          VerticalOptions="Start"/>
+    <Button 
+              Text="Avançar"
+              Clicked="BotaoAvancarFoiClicado"
+              HeightRequest="50"
+              CornerRadius="25"
+              BackgroundColor="#d1725a"
+              TextColor="Black"
+              Margin="0,0,0,10"
+              FontSize="18"
+              FontFamily="CachetStdBold"
+              VerticalOptions="End"/>
+</Grid>
+</ContentPage>

@@ -8,5 +8,10 @@ public partial class SegundaPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+	private void BotaoAvancarFoiClicado(object sender, EventArgs args)
+  {
+      Application.Current.MainPage = new TerceiraPage();
+  }
 }
    
