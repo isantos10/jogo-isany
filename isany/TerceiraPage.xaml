@@ -4,4 +4,50 @@
              x:Class="isany.TerceiraPage"
              Shell.NavBarIsVisible="false">
 
+<Grid>
+   <Grid.RowDefinitions>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="60"/>
+          <RowDefinition Height="60"/>
+   </Grid.RowDefinitions>
+    <Image 
+          Source="funceleiro.png"
+          Opacity=".8"
+          Aspect="AspectFill"
+           Grid.RowSpan="3"/>
+      <Label 
+          Text="Hoje temos duas opções de atividades emocionantes para vocês -Trilha na Floresta: Que tal explorar a beleza natural ao redor da nossa fazenda em uma trilha na floresta? -Um Caça ao Tesouro na Fazenda: Ou talvez prefiram participar de uma empolgante caça ao tesouro pela fazenda!"
+          BackgroundColor="White"
+          Margin="40, 20, 40, 20"
+          FontSize="20"
+          FontFamily="fazendeiros"
+          HorizontalOptions="Center"
+          HorizontalTextAlignment="Center"
+          VerticalOptions="End"
+          Grid.Row="0"/>
+    <Button 
+              Text="Trilha na Floresta"
+              Clicked="BotaoTrilhaFoiClicado"
+              HeightRequest="50"
+              CornerRadius="25"
+              BackgroundColor="#d1725a"
+              TextColor="Black"
+              Margin="0,0,0,10"
+              FontSize="18"
+              FontFamily="CachetStdBold"
+              VerticalOptions="End"
+              Grid.Row="1"/>
+    <Button 
+              Text="Caça Ao Tesouro"
+              Clicked="BotaoCacaFoiClicado"
+              HeightRequest="50"
+              CornerRadius="25"
+              BackgroundColor="#d1725a"
+              TextColor="Black"
+              Margin="0,0,0,14"
+              FontSize="18"
+              FontFamily="CachetStdBold"
+              VerticalOptions="End"
+              Grid.Row="3"/>
+</Grid>
 </ContentPage>
