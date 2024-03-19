@@ -6,4 +6,8 @@ public partial class TrilhaPage : ContentPage
 	{
 		InitializeComponent();
 	}
+	 private void BotaoFinalizarFoiClicado(object sender, EventArgs args)
+  {
+      Application.Current.MainPage = new FinalizarPage();
+  }
 }

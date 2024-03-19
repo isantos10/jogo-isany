@@ -3,8 +3,39 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="isany.TrilhaPage"
              Shell.NavBarIsVisible="false">
+ <Grid>
+   <Grid.RowDefinitions>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="60"/>
+   </Grid.RowDefinitions>
+
      <Image 
           Source="criancastrilha.png"
           Opacity=".8"
-          Aspect="AspectFill">
+          Aspect="AspectFill"
+          Grid.RowSpan="3"/>
+     <Label 
+          Text="As crianças iniciaram a trilha conhecendo as variedades de plantações e equipamentos, passando tambem pelos celeiros, alimentando animais e aprendendo sobre cada um."
+          BackgroundColor="White"
+          Margin="10, 20, 10, 20"
+          FontSize="20"
+          FontFamily="fazendeiros"
+          HorizontalOptions="Center"
+          HorizontalTextAlignment="Center"
+          VerticalOptions="End"
+          Grid.Row="1"/>
+     <Button 
+              Text="Finalizar Trilha"
+              Clicked="BotaoFinalizarFoiClicado"
+              HeightRequest="50"
+              CornerRadius="25"
+              BackgroundColor="#d1725a"
+              TextColor="Black"
+              Margin="0,0,0,10"
+              FontSize="18"
+              FontFamily="CachetStdBold"
+              VerticalOptions="End"
+              Grid.Row="3"/>
+</Grid>
 </ContentPage>             

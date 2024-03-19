@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="isany.CacaPage"
+             x:Class="isany.FinalizarPage"
              Shell.NavBarIsVisible="false">
  <Grid>
    <Grid.RowDefinitions>
@@ -10,12 +10,12 @@
           <RowDefinition Height="60"/>
    </Grid.RowDefinitions>
     <Image 
-          Source="caca.png"
+          Source="finalizar.png"
           Opacity=".8"
           Aspect="AspectFill"
-           Grid.RowSpan="3"/>
-    <Label 
-          Text="As crianças inician a caça no galinheiro, O objetivo é achar o tesouro escondido"
+          Grid.RowSpan="3"/>
+     <Label 
+          Text="Uauu, foi incrivel!! Adorei fazer essa trilha e conhecer a fazenda e os animais!"
           BackgroundColor="White"
           Margin="10, 20, 10, 20"
           FontSize="20"
@@ -24,9 +24,9 @@
           HorizontalTextAlignment="Center"
           VerticalOptions="End"
           Grid.Row="1"/>
-      <Button 
-              Text="Finalizar Caça"
-              Clicked="BotaoFinalCacaFoiClicado"
+     <Button 
+              Text="The End"
+              Clicked="BotaoFinalFoiClicado"
               HeightRequest="50"
               CornerRadius="25"
               BackgroundColor="#d1725a"
@@ -36,5 +36,5 @@
               FontFamily="CachetStdBold"
               VerticalOptions="End"
               Grid.Row="3"/>
-</Grid>
+ </Grid>
 </ContentPage>

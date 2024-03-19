@@ -6,4 +6,8 @@ public partial class CacaPage : ContentPage
 	{
 		InitializeComponent();
 	}
+	 private void BotaoFinalCacaFoiClicado(object sender, EventArgs args)
+  {
+      Application.Current.MainPage = new FinalizarPage();
+  }
 }
